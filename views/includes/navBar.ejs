@@ -1,0 +1,77 @@
+<nav class="navbar navbar-expand-md border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/listing"><i class="fa-solid fa-compass"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 
+      aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link " aria-current="page" href="/listing">Explore</a>
+        </div>
+        <div class="navbar-nav ms-auto">
+           <a class="nav-link" href="/listing/new">Become a host</a>
+          <% if(!currentUser) { %>
+           <a class="nav-link " aria-current="page" href="/user/sign"><b>Sign up</b></a> 
+           <a class="nav-link" href="/user/login"><b>Log in</b></a>
+          <% } %>
+          <% if(currentUser) { %>
+           <a class="nav-link" href="/user/logout"><b>Log out</b></a>
+         <% } %>
+        </div>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <style>
+    #icon{ 
+      margin-top:0.5rem;
+      margin-left:1rem;  
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      width: 100%;  
+      }
+    .icon{
+      margin-right: 1rem;
+       text-align: center; 
+       opacity: 0.7;
+    }
+    .icon:hover{
+      opacity: 1; 
+    }
+    /* .icon div{
+      text-align: center; 
+    } */
+    
+  </style>
+  <div id="icon">
+       
+       <div class="icon">
+          <div><i class="fa-solid fa-mountain-sun"></i></div>
+          <p>mountain</p>
+       </div>
+       <div class="icon">
+          <div><i class="fa-solid fa-book"></i></div>
+          <p>library</p>
+       </div>
+       <div class="icon">
+          <div><i class="fa-solid fa-person-swimming"></i></div>
+          <p>pool</p>
+       </div>
+       <div class="icon">
+          <div><i class="fa-solid fa-mountain-sun"></i></div>
+          <p>mountain</p>
+       </div>
+       <div class="icon">
+          <div><i class="fa-solid fa-book"></i></div>
+          <p>library</p>
+       </div> 
+       <div class="form-check form-switch form-check-reverse toggle-btn">
+         <input class="form-check-input" type="checkbox" id="switchCheckReverse">
+         <label class="form-check-label" for="switchCheckReverse">price after tax</label>
+        </div>
+  </div>
+ 
+    

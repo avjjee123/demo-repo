@@ -1,0 +1,108 @@
+body{
+    font-family: 'Crimson Pro', serif; font-size: 20px !important;
+    display:flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    width:100%; 
+      }
+.container{
+    flex:1;      
+  
+}
+.navbar{
+    height: 4rem;  
+    background-color: azure; 
+    width: 100%;
+} 
+.fa-compass{
+     color:red;
+     font-size: 2rem;  
+}
+.nav-link{
+    color:#222222 !important;  
+    font-size:2rem; 
+}
+footer{ display: flex;
+  
+  flex-direction: column;
+  background-color: aliceblue; 
+  /* width:100svh !important;   */
+}
+.airbnb{
+    margin-right: 1.25rem;
+    font-weight: 600;  
+    font-size: 1.2rem;
+}
+.airbnb:hover{
+    text-decoration: solid black underline;
+}
+.detail{  
+    display: flex;
+     margin: 0px 5rem;  
+     justify-content:space-evenly; 
+}
+.dtl{
+    margin-right: 1.3rem; 
+    padding-right: 2px; 
+    padding-bottom: 1rem; 
+}
+.list-card{ 
+    border:none !important; 
+    margin-top: 1rem;
+    text-decoration: none !important;  
+}
+.img-positon{
+    width: 50%; 
+}
+.card-img-top{ 
+    border-radius: 1rem !important;
+    width: 100% !important;
+   object-fit:cover !important;  
+   height:20rem; 
+}
+.card-body{
+    padding: 0px !important; 
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+ /*edit form */
+ .edit-form{
+    border:solid azure 2px; 
+    border-radius: 20px; 
+    padding:10px; 
+    margin-bottom: 25px; 
+    box-shadow: 4px 4px 8px whitesmoke;
+ }
+ /* each list */
+ .list-img{
+    width: 70vh;
+   height: 30vh;  
+   border-radius: 20px !important;
+ }
+.show-btn{
+    display: flex; 
+}
+
+/* MAP */
+#map{
+    height:40vh;
+    width:60vh; 
+    border-radius: 5%; 
+}
+.toggle-btn{
+    border:black solid 1px;
+    border-radius: 10px;
+    margin-left:auto;
+    margin-right:2rem;
+    padding:1rem;
+}
+.toggle-price{
+    display:none;
+}
+
