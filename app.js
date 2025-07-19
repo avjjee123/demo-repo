@@ -8,6 +8,7 @@ const express=require("express");
 const app=express();
 const mongoose=require("mongoose");
 const path=require("path"); 
+const listing=require("./models/listing.js");
 
 const methodOverride = require("method-override");
 const ejsMate=require("ejs-mate"); 
@@ -136,7 +137,8 @@ app.get("/verified",(req,res)=>{
 });
 app.get("/",(req,res)=>{
    console.dir(req.cookies);  //we pass all cookies
-    res.send("you are on rootttttttttttttth"); 
+   const allListings=await listing.find({});
+    res.render("listing/index.ejs",{allListings}); 
 });
 app.get("/greet",(req,res)=>{
    let {name="anamouse"}=req.cookies;
