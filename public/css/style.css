@@ -81,8 +81,8 @@ footer{ display: flex;
  }
  /* each list */
  .list-img{
-    width: 70vh;
-   height: 30vh;  
+    width: 50%;
+   height: 50%;   
    border-radius: 20px !important;
  }
 .show-btn{
