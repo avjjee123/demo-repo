@@ -137,8 +137,8 @@ app.get("/verified",(req,res)=>{
 });
 app.get("/",async(req,res)=>{
    console.dir(req.cookies);  //we pass all cookies
-   const allListings=await listing.find({});
-    res.render("listing/index.ejs",{allListings}); 
+  console.log("nfjwk");
+ res.send("you are on rootttttttttttttth");  
 });
 app.get("/greet",(req,res)=>{
    let {name="anamouse"}=req.cookies;
