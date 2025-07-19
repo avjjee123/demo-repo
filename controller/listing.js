@@ -6,8 +6,12 @@ const mapToken=process.env.MAP_TOKEN;
 const geocodingClient=mbxGeocoding({accessToken: mapToken}); 
 
 module.exports.allListing=async(req,res)=>{  
-    const allListings=await listing.find({});
-    res.render("listing/index.ejs",{allListings}); 
+   try {
+    const allListings = await listing.find({}); 
+    res.render("listing/index", { allListings });
+  } catch (err) {
+    next(err); // or res.status(500).send("Server Error");
+  }
 }; 
 
 
